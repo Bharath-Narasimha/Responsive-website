@@ -1,0 +1,38 @@
+/* Hide default slick arrows */
+.slick-prev,
+.slick-next {
+  display: none !important; /* Hides default arrows */
+}
+
+/* Custom Arrow Styling */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure arrows are above the content */
+  cursor: pointer;
+}
+
+.custom-prev {
+  left: -50px; /* Adjust position as needed */
+}
+
+.custom-next {
+  right: -50px; /* Adjust position as needed */
+}
+
+/* Slick container styles to prevent overflow */
+.slick-slider {
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

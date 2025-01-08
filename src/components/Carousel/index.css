@@ -1,0 +1,36 @@
+/* General Carousel Styles */
+.slick-track {
+  display: flex;
+  justify-content: center; /* Ensure items are centered */
+}
+
+.slick-slide {
+  margin: 0 16px; /* Adjust this to change the space between items */
+}
+
+.slick-list {
+  overflow: hidden;
+  padding: 0 16px; /* Add some padding around the list for extra space */
+}
+
+/* Arrow positioning */
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -40px; /* Adjust the left position of the previous arrow */
+}
+
+.slick-next {
+  right: -40px; /* Adjust the right position of the next arrow */
+}
+
+.slick-prev img, .slick-next img {
+  width: 30px; /* Set the size for the arrow images */
+  height: 30px;
+  object-fit: contain;
+}
